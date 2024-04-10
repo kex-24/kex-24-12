@@ -1,90 +1,96 @@
-# Galaxy Pets: Collect and Train Your Cosmic Companions
-
-For this programming assignment in Java, you are stepping into the shoes of a cosmic trainer, embarking on a journey through the universe to collect and train Galaxy Pets. These are mythical creatures with unique abilities and attributes that you'll be modeling in Java.
+# Lightning Defender Assignment
 
 ## Deadline
-This assignment is due before the next scheduled class.
+This work should be submitted before the next exercise session.
 
 ## Instructions
-For instructions on how to complete and submit this assignment, please refer to the assignments section of the course instructions reachable via [assignments section of our course webpage](https://assignments.example.com).
+For details on how to complete and submit assignments, please refer to the assignments section of the course instructions on your learning management system.
 
 ## Preparation
-
-- Complete and understand all questions in Module 2: "Exploring Object-Oriented Programming".
-- Access the OLI material through Canvas or directly via [programming course materials](https://programmingmaterials.example.com).
-
-Note: The OLI material and tasks this year may not perfectly align, so it's okay to read ahead if you did not find everything mentioned.
+- Review Module 2: Exploring the Anatomy of a Class.
+- Read through the OLI material: you can find this both via your learning platform and directly through the provided link.
 
 ## Learning Goals
+This week's goals include understanding and implementing:
+* Java class design
+* Instance fields
+* Constructor methods
+* Getters and setters
+* The dot notation
+* Printing to the terminal
+* Main method and its purpose
+* Variable scope and shadowing
 
-The goals for this week include understanding how to:
-- Design Java classes.
-- Implement fields and methods within a class.
-- Utilize the `main` method for testing.
-- Understand the concept of object encapsulation.
-- Manage object interaction within a Java application.
+## Troubleshooting
+If you encounter issues:
+1. Check if your question has already been asked under the issues section.
+2. If not, post your question with a descriptive title.
+3. Consult a teaching assistant during one of the exercise sessions.
 
-## Troubleshooting Guide
+Discuss with peers but remember, sharing exact answers is not permitted.
 
-1. Browse the [posted questions](https://forum.example.com/issues) related to this week's assignment. Are others experiencing the same issue?
-2. If not, create a [New Question](https://forum.example.com/issues/new) with a descriptive title beginning with "Week *x*: *summary of problem*".
-3. Seek out further help at the [weekly help sessions](https://helpsessions.example.com) hosted by our team.
+## Assignment
 
-Collaboration with peers is encouraged, but please avoid sharing exact solutions.
+In a world where the skies are constantly barraged by storms, the mythic creatures known as *Lightning Defenders* stand as guardians of their territories. Your task is to model these mythic creatures in Java!
 
-## Assignment Details
+### Exercise 1.0 Starting Your Journey!
+Create a new Java file named `LightningDefender.java` and define the class `LightningDefender` within it.
 
-Your journey through the galactic frontier begins with the creation of unique Galaxy Pets crafted from the essence of cosmic phenomena. Dive into this universe by modeling these creatures in Java. Let your imagination run wild; perhaps a Starlion with the roar of a collapsing star, or a Nebulupi, a wolf made from the gas of a nebulous cloud.
+Then, within the `main` method, create variables that define a Lightning Defender:
+- Name: String
+- Energy Level: int
+- Power: int
+- Shield Strength: int
+- Status: boolean (true for active, false for dormant)
 
-### Task 1: Class Creation
+Compile and run your program to ensure correctness.
 
-Start by creating a file named `GalaxyPet.java` inside the `src` directory. Declare the GalaxyPet class within this file.
+### Exercise 1.1 Summon More Defenders
+Create two more Lightning Defenders with different attributes.
 
-### Task 2: Defining Properties
+Reflect on the scalability and maintainability of creating multiple defenders in this manner. Introduce the concept of Java classes and objects to alleviate these concerns.
 
-Our Galaxy Pets need characteristics. Define the following fields within the GalaxyPet class, without assigning any initial values:
+### Exercise 1.2 Class Fields
+Revise your `LightningDefender` class to use fields rather than local variables in the `main` method for the attributes of the Lightning Defender.
 
-- String name
-- int energyLevel
-- int cosmicPower
-- int speed
-- boolean asleep
+Instantiate a `LightningDefender` object within the `main` method and assign it relevant attributes.
 
-### Task 3: Spawning Galaxy Pets
+### Exercise 1.3 Accessors and Mutators
+With encapsulation in mind, convert all fields of the `LightningDefender` class to `private` and create getters and setters for each field.
 
-In the `main` method of your GalaxyPet class, create and instantiate a "Starlion" with initial values for its characteristics. Use the dot operator to set these attributes directly for now.
+Replace direct field access in the `main` method with these new methods.
 
-### Task 4: Encapsulation with Getters and Setters
+### Exercise 1.4 The Constructor
+Implement a constructor for the `LightningDefender` class that accepts parameters for all the object's attributes and initializes them accordingly.
 
-To encapsulate the inner workings of our Galaxy Pets, change the access modifiers of your fields to `private`. Then, implement getters and setters for each property.
+Update the `main` method to use the constructor when creating Lightning Defender objects.
 
-### Task 5: Constructing with Constructors
+### Exercise 1.5 More Defenders, yet Again
+Utilize the constructor to create two new Lightning Defender objects. Observe the improved code structure.
 
-Implement a constructor for the GalaxyPet class that allows setting all characteristics upon instantiation. Create a second pet, "Nebulupi", using this constructor.
+### Exercise 1.6 Reporting Status
+Implement a `reportStatus()` method that prints out a formatted report of the Lightning Defender's attributes.
 
-### Task 6: Display Information
+Ensure this method is called for each defender in the `main` method to verify functionality.
 
-Create a method named `displayInfo` within the GalaxyPet class that prints out all information about the pet to the console.
+### Exercise 1.7 Lightning Attack!
+Create an `attack` method simulating an attack scenario where one defender attacks another. This method should accept a `LightningDefender` object as a parameter to represent the target of the attack.
 
-### Task 7: The Cosmic Challenge
+There should be a formula for calculating damage based on the attacker's power and the defender's shield strength, with the resulting loss of energy for the target.
 
-Galaxy Pets can challenge each other to cosmic duels. Implement a method named `challenge` where one pet can challenge another. The outcome will determine which pet gains cosmic power. Incorporate simple logic based on your chosen attributes.
+Print out the attack details and the target's remaining energy level.
 
-### Task 8: Understanding Scope and Shadowing
+### Exercise 1.8 Exploring Shadowing
+Investigate and prepare to discuss examples of variable shadowing and how it affects code within a class or methods.
 
-Review examples of scope and variable shadowing provided in the reading materials. Be prepared to adjust your implementation if necessary, focusing on proper usage of the `this` keyword.
+## Checklist
+- Created the initial setting for the world of Lightning Defenders.
+- Used fields to define a Lightning Defender's attributes.
+- Added getters and setters for all fields.
+- Constructed a relevant constructor method.
+- Implemented a method to print a Lightning Defender's status.
+- Devised an `attack` method for simulating combat between defenders.
+- Reviewed examples of variable shadowing.
 
-## Final Checklist
-
-- [ ] Created and developed the GalaxyPet class with fields and methods.
-- [ ] Utilized getters and setters for encapsulation.
-- [ ] Implemented constructors for easy object instantiation.
-- [ ] Developed a method displaying a pet's info.
-- [ ] Enabled Galaxy Pets to challenge each other.
-
-## Bugs and Errors?
-
-If you encounter any inconsistencies or errors with this assignment, please report them by creating a [New Issue](https://forum.example.com/issues/new) with the title "Week *x* Error: *summary of error here*". Contributors identifying bugs will be acknowledged.
-
-
-This personalized task should help the student understand the same core programming concepts as the model task, framed around an engaging theme of collecting and training cosmic creatures.
+## Bugs and Errors
+If there are any issues or inconsistencies in this exercise, please report them. Your contributions will be acknowledged in the acknowledgment section.
